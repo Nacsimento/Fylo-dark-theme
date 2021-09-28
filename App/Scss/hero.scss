@@ -1,0 +1,81 @@
+
+
+.hero{
+    text-align: center;
+    background-color: $darkblue1;
+
+    
+    
+    &__bg{
+        background-image: url("https:/Fylo-dark-theme/images/bg-curvy-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+
+        @include breakpoint-up(large){
+            background-image: url("https:/Fylo-dark-theme/images/bg-curvy-desktop.svg");
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: contain;
+        }
+
+        
+    }
+
+   
+
+    &__image{
+        
+
+        img{
+            height: 19.9375rem;
+            width: 22.0625rem;
+
+            @include breakpoint-up(large){
+                height: auto;
+                width: auto;
+            }
+            
+        }
+
+        
+    }
+    &__text{
+        padding: 0rem 1.125rem;
+        @include breakpoint-up(large){
+            margin-top: 4.6875rem;
+        }
+        
+        h1{
+            font-family:'Raleway', sans-serif;
+            color: white;
+            font-size: 1.875rem;
+            @include breakpoint-up(large){
+                margin: 1.875rem auto;
+                width: 60%;
+                font-size: 3rem;
+            }
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            font-size: 0.875rem;
+            line-height: 1.8;
+            padding: 0 2.5rem;
+            @include breakpoint-up(large){
+                margin: 0 auto;
+                width: 45%;
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    &__btn{
+        .button{
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            margin: 1.25rem 0rem;
+        }
+    }
+}

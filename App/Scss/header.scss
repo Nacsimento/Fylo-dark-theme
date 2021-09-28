@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $darkblue1;
+    padding:3rem 1.875rem ;
+
+    @include breakpoint-up(large){
+           padding: 3rem 5rem;
+        
+    }
+    
+    
+
+    &__logo{
+
+        img{
+            height: 1.75rem;
+            width:5.625rem;
+        }
+       
+    }
+
+   
+
+    &__links{
+        a{
+            font-family:'Raleway', sans-serif;
+            color: rgb(212, 212, 212);
+            transition: color 150ms ease-in-out;
+
+            &:hover{
+                text-decoration: underline;
+                color: white;
+                
+            }
+
+            &:not(:last-child){
+                padding-right: 1.125rem;
+
+                @include breakpoint-up(large){
+                    padding-right: 5.125rem;
+                }
+            }
+        }
+    }
+}

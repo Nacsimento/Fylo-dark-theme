@@ -1,0 +1,175 @@
+.footer{
+    background-color: $darkblue3;
+    padding: 32px;
+    margin-top: -195px;
+    padding-top: 270px;
+
+    @include breakpoint-up(large){
+        padding: 50px 74px;
+        padding-top: 270px;
+        margin-top: -155px;
+    }
+
+
+    &__logo{
+        img{
+            margin-bottom: 30px;
+        }
+       
+    }
+
+    &__grid{
+        @include breakpoint-up(large){
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr ;
+            justify-self: flex-start;
+        }
+    }
+
+    &__col1{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include breakpoint-up(large){
+            align-items: flex-start;
+        }
+
+
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(189, 189, 189);
+            font-size: 0.875rem;
+            
+
+            @include breakpoint-up(large){
+                margin: 0;
+            }
+            
+        }
+    }
+
+    &__col2{
+        justify-self: center;
+    }
+
+    &__row1{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include breakpoint-up(large){
+            margin-bottom: 20px;
+        }
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(189, 189, 189);
+            font-size: 0.875rem;
+
+            @include breakpoint-up(large){
+                margin: 0;
+            }
+            
+        }
+    }
+    &__row2{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p{
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(189, 189, 189);
+            font-size: 0.875rem;
+
+            @include breakpoint-up(large){
+                margin: 0;
+            }
+            
+        }
+    }
+
+    &__col3{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 60px ;
+        margin-top: 60px ;
+
+        @include breakpoint-up(large){
+            margin-bottom: 0px;
+            margin-top: 0px;
+            justify-self: center;
+        }
+
+        a{
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(189, 189, 189);
+            font-size: 0.875rem;
+            transition: color 150ms ease-in-out;
+
+            &:hover{
+                color: white;
+            }
+            
+        }
+    }
+
+    &__col4{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-bottom: 60px ;
+
+        @include breakpoint-up(large){
+            justify-self: center
+        }
+
+        
+
+        a{
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(189, 189, 189);
+            font-size: 0.875rem;
+            transition: color 150ms ease-in-out;
+
+            &:hover{
+                color: white;
+            }
+            
+        }
+    }
+
+    &__col5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        @include breakpoint-up(large){
+            align-items: flex-start;
+        }
+
+        a{
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            font-size: 0.875rem;
+
+            
+                svg path{
+                    transition: fill 150ms ease-in-out;
+                }
+
+                &:hover svg path{
+                    fill: $cyan;
+                }
+
+            
+            
+        }
+    }
+}

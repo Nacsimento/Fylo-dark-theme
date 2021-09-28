@@ -1,0 +1,155 @@
+
+
+#demo{
+    color:$lightred ;
+   
+
+    @include breakpoint-up(large){
+        padding-right: 230px;
+    }
+}
+form{
+    @include breakpoint-up(large){
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    @include breakpoint-up(medium){
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+}
+.form{
+    background-color: $darkblue2;
+    padding: 1px;
+    &__container{
+        margin: 19px 17px;
+        padding: 25px;
+        background-color: $darkblue4;
+        border-radius: 4px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        @include breakpoint-up(large){
+            margin: 19px 350px;
+        }
+
+        h1{
+            font-family:'Raleway', sans-serif;
+            color: white;
+            font-size: 1.875rem;
+        }
+        p{
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            margin-bottom: 50px;
+
+            @include breakpoint-up(large){
+                margin: 0 auto;
+                width: 90%;
+                margin-bottom: 50px;
+            }
+            
+        }
+
+        input{
+            
+            height: 2.5rem;
+            width:20rem;
+            border: none;
+            border-radius: 50px;
+            padding: 13px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            outline: none;
+
+            @include breakpoint-up(large){
+                margin-bottom: 0px;
+                width:25rem;
+            }
+        }
+
+        
+    }
+
+}
+
+.button2{
+
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 6.5rem;
+    background:linear-gradient(to right , hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom:0;
+        background-color: rgba(255,255,255,0.25);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+
+
+        
+
+    }
+    &:hover::before{
+        opacity: 1;
+    }
+    @include breakpoint-up(large){
+        padding: 12px 35px;
+    
+  
+    position: relative;
+    display: inline-block;
+    
+    background:linear-gradient(to right , hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    
+    
+    transition: opacity 300ms ease-in-out;
+    overflow: hidden;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom:0;
+        background-color: rgba(255,255,255,0.25);
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+
+
+        
+
+    }
+    &:hover::before{
+        opacity: 1;
+    }
+
+}
+}
